@@ -1,71 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vidspire</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vidspire ✨</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header -->
   <header>
-    <h1>Vidspire</h1>
-    <input type="text" placeholder="Search..." id="searchBar">
-    <div id="profileCircle">U</div>
+    <h1 class="logo">Vidspire ✨</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search videos, creators, or folders..." />
+      <button><span>🔍</span></button>
+    </div>
+    <div class="profile-circle">👤</div>
   </header>
 
-  <!-- Main buttons -->
-  <div class="main-buttons">
-    <button id="foldersBtn">Folders</button>
-    <button id="featuredBtn">Featured</button>
-    <button id="showcaseBtn">Showcase Video</button>
-    <button id="chatbotBtn">Chatbot</button>
-  </div>
+  <main>
+    <div class="nav-buttons">
+      <button class="rainbow-btn">🎬 Showcase Your Videos</button>
+      <button class="rainbow-btn">🎥 Discover</button>
+      <button class="rainbow-btn">📁 My Folders</button>
+      <button class="rainbow-btn">💬 Community</button>
+    </div>
 
-  <!-- Featured Folders -->
-  <div id="foldersContainer">
-    <div class="folder">
-      <img src="https://via.placeholder.com/200x120?text=Gardening" alt="Gardening">
-      <p>Gardening Tips</p>
-    </div>
-    <div class="folder">
-      <img src="https://via.placeholder.com/200x120?text=Cooking" alt="Cooking">
-      <p>Cooking Ideas</p>
-    </div>
-    <div class="folder">
-      <img src="https://via.placeholder.com/200x120?text=Indie+Films" alt="Indie Films">
-      <p>Indie Short Films</p>
-    </div>
-  </div>
-
-  <!-- Folder Modal -->
-  <div id="folderModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Customize Folder</h2>
-      <label>Thumbnail:</label>
-      <input type="file" id="thumbnailUpload">
-      <label>Title:</label>
-      <input type="text" placeholder="Folder Title">
-      <label>Description:</label>
-      <textarea placeholder="Folder Description"></textarea>
-      <label>Tags:</label>
-      <input type="text" placeholder="Comma separated tags">
-      <button>Save (Placeholder)</button>
-    </div>
-  </div>
-
-  <!-- Chatbot Placeholder -->
-  <div id="chatbotTab">Chat</div>
-  <div id="chatbotWindow">
-    <div id="chatHeader">Chatbot <span id="closeChat">&times;</span></div>
-    <div id="chatMessages">
-      <p><strong>Bot:</strong> Hello! How can I help you today?</p>
-    </div>
-    <input type="text" placeholder="Type a message..." id="chatInput">
-    <button id="sendBtn">Send</button>
-  </div>
+    <section class="featured">
+      <h2>Featured Folders</h2>
+      <div class="folder-grid">
+        <div class="folder-card">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Folder 1">
+          <p>Inspiring Creators</p>
+        </div>
+        <div class="folder-card">
+          <img src="https://img.youtube.com/vi/3JZ_D3ELwOQ/0.jpg" alt="Folder 2">
+          <p>Short Films</p>
+        </div>
+        <div class="folder-card">
+          <img src="https://img.youtube.com/vi/aqz-KE-bpKQ/0.jpg" alt="Folder 3">
+          <p>Learning & Growth</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
 </html>
+
