@@ -1,5 +1,2 @@
-document.querySelectorAll(".rainbow-btn").forEach(button => {
-  button.addEventListener("click", () => {
-    alert(`You clicked "${button.textContent.trim()}"!`);
-  });
-});
+// Just a placeholder for future chatbot, uploads, and folder logic.
+console.log("Vidspire loaded successfully 🌈✨");
