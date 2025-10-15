@@ -4,56 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vidspire</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="shooting-star"></div>
+
   <header>
-    <div class="logo-container">
-      <div class="shooting-star"></div>
-      <h1 class="logo">Vidspire</h1>
+    <h1 class="logo">Vidspire</h1>
+    <div class="search-container">
+      <input type="text" placeholder="Search videos, creators, or clubs..." />
+      <button class="search-btn">🔍</button>
     </div>
-    <div class="search-bar">
-      <input type="text" placeholder="Search videos, creators, or folders..." />
-      <button>🔍</button>
-    </div>
-    <div class="profile-circle"></div>
   </header>
 
   <nav>
-    <button>Home</button>
-    <button>Trending</button>
-    <button>Clubs</button>
-    <button>Showcase</button>
+    <button class="nav-btn">Home</button>
+    <button class="nav-btn">Discover</button>
+    <button class="nav-btn">Showcase Your Videos</button>
+    <button class="nav-btn">Clubs</button>
   </nav>
 
   <main>
     <section class="featured">
-      <h2>Featured Playlists</h2>
-      <div class="video-grid">
-        <div class="folder">
-          <img src="https://i.ytimg.com/vi/tgbNymZ7vqY/hqdefault.jpg" alt="Folder Thumbnail">
-          <p>Mindful Living</p>
-        </div>
-        <div class="folder">
-          <img src="https://i.ytimg.com/vi/ysz5S6PUM-U/hqdefault.jpg" alt="Folder Thumbnail">
-          <p>Film Creators Club</p>
-        </div>
-        <div class="folder">
-          <img src="https://i.ytimg.com/vi/oUFJJNQGwhk/hqdefault.jpg" alt="Folder Thumbnail">
-          <p>Inspiration Zone</p>
-        </div>
+      <h2>Featured Folders</h2>
+      <div class="folder-grid">
+        <div class="folder">🎬 Film & Cinema</div>
+        <div class="folder">🎨 Creative Projects</div>
+        <div class="folder">🎵 Music & Sound</div>
+        <div class="folder">💡 Learning & Ideas</div>
       </div>
-    </section>
-
-    <section class="showcase">
-      <h2>Showcase Your Videos 🎬</h2>
-      <button class="showcase-btn">🎥 Upload & Showcase</button>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Vidspire — Connect. Create. Inspire.</p>
+    <p>© 2025 Vidspire — Connect, Discover, and Inspire</p>
   </footer>
 
   <script src="script.js"></script>
