@@ -1,2 +1,2 @@
-// Placeholder for chatbot and interactivity (to add later)
-console.log("Vidspire is loading... ready to inspire!");
+// Placeholder for future interactivity like chatbots
+console.log("Vidspire is ready!");
