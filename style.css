@@ -11,12 +11,12 @@ body {
 /* --- Logo --- */
 .logo {
   font-size: 3.5rem;
+  font-weight: bold;
   background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold;
+  text-shadow: 0 0 0.5px #fff; /* fixes blurriness */
   margin-top: 50px;
-  text-shadow: 0 0 5px white; /* sharpen letters */
 }
 
 /* --- Search Bar --- */
