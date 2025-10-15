@@ -3,47 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vidspire ✨</title>
+  <title>Vidspire</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1 class="logo">Vidspire ✨</h1>
+    <div class="logo-container">
+      <div class="shooting-star"></div>
+      <h1 class="logo">Vidspire</h1>
+    </div>
     <div class="search-bar">
       <input type="text" placeholder="Search videos, creators, or folders..." />
-      <button><span>🔍</span></button>
+      <button>🔍</button>
     </div>
-    <div class="profile-circle">👤</div>
+    <div class="profile-circle"></div>
   </header>
 
-  <main>
-    <div class="nav-buttons">
-      <button class="rainbow-btn">🎬 Showcase Your Videos</button>
-      <button class="rainbow-btn">🎥 Discover</button>
-      <button class="rainbow-btn">📁 My Folders</button>
-      <button class="rainbow-btn">💬 Community</button>
-    </div>
+  <nav>
+    <button>Home</button>
+    <button>Trending</button>
+    <button>Clubs</button>
+    <button>Showcase</button>
+  </nav>
 
+  <main>
     <section class="featured">
-      <h2>Featured Folders</h2>
-      <div class="folder-grid">
-        <div class="folder-card">
-          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Folder 1">
-          <p>Inspiring Creators</p>
+      <h2>Featured Playlists</h2>
+      <div class="video-grid">
+        <div class="folder">
+          <img src="https://i.ytimg.com/vi/tgbNymZ7vqY/hqdefault.jpg" alt="Folder Thumbnail">
+          <p>Mindful Living</p>
         </div>
-        <div class="folder-card">
-          <img src="https://img.youtube.com/vi/3JZ_D3ELwOQ/0.jpg" alt="Folder 2">
-          <p>Short Films</p>
+        <div class="folder">
+          <img src="https://i.ytimg.com/vi/ysz5S6PUM-U/hqdefault.jpg" alt="Folder Thumbnail">
+          <p>Film Creators Club</p>
         </div>
-        <div class="folder-card">
-          <img src="https://img.youtube.com/vi/aqz-KE-bpKQ/0.jpg" alt="Folder 3">
-          <p>Learning & Growth</p>
+        <div class="folder">
+          <img src="https://i.ytimg.com/vi/oUFJJNQGwhk/hqdefault.jpg" alt="Folder Thumbnail">
+          <p>Inspiration Zone</p>
         </div>
       </div>
     </section>
+
+    <section class="showcase">
+      <h2>Showcase Your Videos 🎬</h2>
+      <button class="showcase-btn">🎥 Upload & Showcase</button>
+    </section>
   </main>
+
+  <footer>
+    <p>© 2025 Vidspire — Connect. Create. Inspire.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
