@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: 'Bevan', sans-serif;
+  font-family: 'Bevan', cursive;
   background-color: #000;
   color: #fff;
   text-align: center;
@@ -10,6 +10,7 @@ body {
 
 header {
   padding: 40px 20px;
+  background-color: #000;
   position: relative;
 }
 
@@ -41,7 +42,7 @@ header {
   margin-left: 5px;
   border: none;
   border-radius: 30px;
-  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  background: linear-gradient(90deg, #ff6a6a, #ffb347);
   color: #fff;
   font-weight: bold;
   cursor: pointer;
@@ -60,21 +61,20 @@ header {
   margin: 30px 0;
 }
 
-.rainbow-btn {
+.gradient-btn {
   padding: 15px 25px;
   font-size: 1.1rem;
   border: none;
   border-radius: 40px;
   cursor: pointer;
   color: white;
-  background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
-  background-size: 600% 600%;
+  background: linear-gradient(45deg, #ff6a6a, #ffb347);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.rainbow-btn:hover {
+.gradient-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px gold;
+  box-shadow: 0 0 15px #ffb347;
 }
 
 .featured h2 {
@@ -129,4 +129,6 @@ header {
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(255,255,255,0.3);
 }
+
+
 
