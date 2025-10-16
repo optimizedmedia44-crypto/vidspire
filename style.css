@@ -28,7 +28,7 @@ header {
 
 .search-bar input {
   padding: 15px;
-  width: 60%;
+  width: 70%;
   border: none;
   border-radius: 30px;
   outline: none;
@@ -42,7 +42,7 @@ header {
   margin-left: 5px;
   border: none;
   border-radius: 30px;
-  background: linear-gradient(90deg, #ff6a6a, #ffb347);
+  background: linear-gradient(45deg, #ff6a6a, #ffb347);
   color: #fff;
   font-weight: bold;
   cursor: pointer;
@@ -61,7 +61,7 @@ header {
   margin: 30px 0;
 }
 
-.rainbow-btn {
+.gradient-btn {
   padding: 15px 25px;
   font-size: 1.1rem;
   border: none;
@@ -72,7 +72,7 @@ header {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.rainbow-btn:hover {
+.gradient-btn:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px #ffb347;
 }
@@ -129,6 +129,5 @@ header {
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(255,255,255,0.3);
 }
-
 
 
