@@ -4,12 +4,14 @@ body {
   margin: 0;
   font-family: 'Bevan', cursive;
   background-color: #000;
-  color: #fff;
+  color: white;
   text-align: center;
 }
 
+/* --- Header --- */
 header {
-  padding: 40px 20px;
+  padding: 40px 20px 20px;
+  position: relative;
 }
 
 .logo {
@@ -17,76 +19,75 @@ header {
   background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 2px rgba(255,255,255,0.4);
+  filter: brightness(1.4);
   margin-bottom: 20px;
-  display: inline-flex;
-  align-items: center;
+  display: inline-block;
 }
 
-.lightbulb {
-  font-size: 1.5em;
+.icon {
+  font-size: 1.8rem;
   color: yellow;
-  margin-left: 10px;
+  text-shadow: 0 0 15px yellow, 0 0 30px white;
+  vertical-align: middle;
 }
 
+/* --- Search --- */
 .search-bar {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 40px;
+  margin: 0 auto 30px;
+  width: 80%;
+  max-width: 600px;
 }
 
 .search-bar input {
-  padding: 14px;
-  width: 65%;
-  border-radius: 30px;
+  width: 80%;
+  padding: 12px 20px;
+  border-radius: 30px 0 0 30px;
   border: none;
+  font-size: 1.1rem;
   background-color: #111;
   color: #fff;
-  font-size: 1.1rem;
 }
 
 .search-bar button {
-  padding: 14px 24px;
-  border-radius: 30px;
+  padding: 12px 25px;
   border: none;
-  background: linear-gradient(135deg, #ff6a8d, #ffa64d);
-  color: #fff;
+  border-radius: 0 30px 30px 0;
+  background: linear-gradient(90deg, #ff0084, #ffae00, #ff5c00, #ff0084);
+  color: white;
   font-weight: bold;
   cursor: pointer;
-  transition: transform 0.2s;
 }
 
-.search-bar button:hover {
-  transform: scale(1.05);
-}
-
+/* --- Navigation Buttons --- */
 .nav-buttons {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 15px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
-.gradient-btn {
-  padding: 14px 28px;
-  font-size: 1.1rem;
+.nav-btn {
+  padding: 12px 25px;
+  border-radius: 40px;
   border: none;
-  border-radius: 30px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ff5c7a, #ffae00);
+  color: white;
   cursor: pointer;
-  background: linear-gradient(135deg, #ff6a8d, #ffa64d);
-  color: #fff;
   transition: transform 0.2s, box-shadow 0.2s;
-  position: relative;
 }
 
-.gradient-btn:hover {
+.nav-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px #ff6a8d;
+  box-shadow: 0 0 15px gold;
 }
 
+/* --- Featured Thumbnails --- */
 .featured h2 {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -94,20 +95,24 @@ header {
 
 .folder-grid {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
-  padding: 0 20px;
 }
 
 .folder-card {
-  width: 250px;
+  width: 220px;
   background: #111;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 2px 10px rgba(255,255,255,0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
   cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.folder-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px gold;
 }
 
 .folder-card img {
@@ -117,34 +122,30 @@ header {
 }
 
 .folder-card p {
-  padding: 10px;
+  margin: 10px 0;
   font-weight: bold;
   color: #eee;
 }
 
-.folder-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #ff6a8d;
-}
-
-.chatbot-icon {
+/* --- Chat Button --- */
+#chat-btn {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  font-size: 3.5rem;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  padding: 15px 20px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(45deg, #ffae00, #ff5c7a);
+  color: white;
   cursor: pointer;
-  padding: 10px 15px;
-  background: linear-gradient(135deg, #ff6a8d, #ffa64d);
-  border-radius: 50px;
-  box-shadow: 0 0 20px #ff6a8d;
+  box-shadow: 0 0 20px gold;
   animation: pulse 2s infinite;
-  color: #fff;
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-  100% { transform: scale(1); }
+  0%, 100% { transform: scale(1); box-shadow: 0 0 20px gold; }
+  50% { transform: scale(1.1); box-shadow: 0 0 30px gold; }
 }
 
 
