@@ -4,7 +4,6 @@ document.querySelectorAll(".gradient-btn").forEach(button => {
   });
 });
 
-// Placeholder for chatbot click
 document.querySelector(".chatbot-icon").addEventListener("click", () => {
   alert("Chatbot coming soon!");
 });
