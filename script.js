@@ -1,5 +1,132 @@
-document.querySelectorAll(".rainbow-btn").forEach(button => {
-  button.addEventListener("click", () => {
-    alert(`You clicked "${button.textContent.trim()}"!`);
-  });
-});
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Bevan', cursive;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  padding: 40px 20px;
+  background-color: #000;
+  position: relative;
+}
+
+.logo {
+  font-size: 3.5rem;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 15px;
+  width: 70%;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  background-color: #111;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.search-bar button {
+  padding: 15px 25px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #ff6a6a, #ffb347);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.search-bar button:hover {
+  transform: scale(1.05);
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.gradient-btn {
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(45deg, #ff6a6a, #ffb347);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gradient-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffb347;
+}
+
+.featured h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.folder-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.folder-card {
+  width: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #111;
+  box-shadow: 0 2px 10px rgba(255,255,255,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.folder-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.folder-card p {
+  padding: 10px;
+  font-weight: 600;
+  color: #eee;
+}
+
+.folder-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+/* --- Chatbot Icon --- */
+.chatbot-icon {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 1000;
+  background-color: #111;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
