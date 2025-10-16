@@ -1,129 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #000;
-  color: #fff;
   margin: 0;
+  font-family: 'Bevan', cursive;
+  background-color: #000;
+  color: white;
   text-align: center;
+  overflow-x: hidden;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background: linear-gradient(90deg, #111, #222);
-  border-bottom: 2px solid gold;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
+/* --- Logo --- */
 .logo {
-  font-size: 2.5em;
-  font-weight: 800;
-  color: transparent;
-  background: linear-gradient(90deg, #ff00ff, #00ffff, #ffff00);
-  background-clip: text;
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: colorShift 5s infinite linear;
+  margin-top: 80px;
+  animation: shimmer 5s linear infinite;
   filter: none; /* removed blur */
 }
 
 .lightbulb {
-  font-size: 2.2em;
-  animation: pulse 2s infinite;
+  font-size: 3rem;
+  color: gold;
+  animation: pulseGlow 2s infinite ease-in-out;
 }
 
-@keyframes pulse {
-  0% { text-shadow: 0 0 5px gold; }
-  50% { text-shadow: 0 0 25px gold; }
-  100% { text-shadow: 0 0 5px gold; }
+@keyframes pulseGlow {
+  0% { text-shadow: 0 0 8px gold; opacity: 0.8; }
+  50% { text-shadow: 0 0 20px gold; opacity: 1; }
+  100% { text-shadow: 0 0 8px gold; opacity: 0.8; }
 }
 
-@keyframes colorShift {
-  0% { filter: hue-rotate(0deg); }
-  100% { filter: hue-rotate(360deg); }
+@keyframes shimmer {
+  0% { filter: brightness(1.2); }
+  50% { filter: brightness(1.5); }
+  100% { filter: brightness(1.2); }
+}
+
+/* --- Search Bar --- */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 500px;
 }
 
 .search-container input {
-  padding: 8px 12px;
-  border-radius: 20px;
+  width: 80%;
+  padding: 10px;
+  border-radius: 25px 0 0 25px;
   border: none;
-  width: 250px;
+  font-size: 1rem;
 }
 
 .search-btn {
-  margin-left: 10px;
-  padding: 8px 12px;
-  border-radius: 20px;
-  background-color: gold;
+  padding: 10px 20px;
   border: none;
+  background-color: gold;
+  color: black;
+  border-radius: 0 25px 25px 0;
   cursor: pointer;
+  font-weight: bold;
 }
 
+/* --- Navigation --- */
 nav {
-  background-color: #111;
-  padding: 15px 0;
-  border-bottom: 1px solid gold;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
 }
 
 .nav-btn {
-  background: none;
-  border: 1px solid gold;
-  color: gold;
-  padding: 10px 18px;
-  margin: 0 8px;
-  border-radius: 20px;
+  background: linear-gradient(90deg, violet, blue, green, yellow, orange, red);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
   cursor: pointer;
-  transition: background 0.3s;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .nav-btn:hover {
-  background: gold;
-  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px gold;
 }
 
+/* --- Folder Section --- */
 .featured {
-  padding: 40px;
+  margin: 50px 0;
 }
 
 .folder-grid {
   display: flex;
-  justify-content: center;
-  gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .folder {
-  background-color: #111;
+  width: 200px;
+  height: 120px;
+  background: linear-gradient(135deg, #222, #333);
   border: 2px solid gold;
   border-radius: 15px;
-  width: 260px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.folder img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-}
-
-.folder p {
-  padding: 10px 0;
-  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .folder:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 20px gold;
 }
 
+/* --- Footer --- */
 footer {
-  border-top: 2px solid gold;
-  padding: 20px 0;
-  margin-top: 40px;
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
 }
