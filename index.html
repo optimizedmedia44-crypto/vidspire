@@ -3,77 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vidspire 💡</title>
+  <title>Vidspire</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header -->
   <header>
     <h1 class="logo">Vidspire <span class="lightbulb">💡</span></h1>
     <div class="search-bar">
       <input type="text" placeholder="Search videos, creators, or folders..." />
       <button>🔍</button>
     </div>
-    <div class="nav-buttons">
-      <button class="category-btn">🎬 Movies</button>
-      <button class="category-btn">🎨 Fashion</button>
-      <button class="category-btn">📁 My Folders</button>
-      <button class="category-btn">💬 Community</button>
-      <button class="category-btn">📚 Courses</button>
-      <button class="category-btn">🛍 Marketplace</button>
-    </div>
   </header>
 
-  <!-- Main content -->
+  <nav class="nav-buttons">
+    <button class="gradient-btn">🎬 Showcase Your Videos</button>
+    <button class="gradient-btn">📁 My Folders</button>
+    <button class="gradient-btn">🎥 Movies</button>
+    <button class="gradient-btn">👗 Fashion</button>
+    <button class="gradient-btn">🛒 Marketplace</button>
+    <button class="gradient-btn">💬 Communities</button>
+    <button class="gradient-btn">📚 Courses</button>
+  </nav>
+
   <main>
-    <!-- My Folders row -->
+    <!-- User's folders row -->
     <section class="row">
-      <h2>My Folders (Free Tier)</h2>
-      <div class="folder-row">
-        <div class="folder-card"><img src="https://via.placeholder.com/250x150?text=Folder+1"><p>Folder 1</p></div>
-        <div class="folder-card"><img src="https://via.placeholder.com/250x150?text=Folder+2"><p>Folder 2</p></div>
-        <div class="folder-card"><img src="https://via.placeholder.com/250x150?text=Folder+3"><p>Folder 3</p></div>
-        <div class="folder-card"><img src="https://via.placeholder.com/250x150?text=Folder+4"><p>Folder 4</p></div>
-        <div class="folder-card"><img src="https://via.placeholder.com/250x150?text=Folder+5"><p>Folder 5</p></div>
+      <h2>My Folders</h2>
+      <div class="folder-grid">
+        <div class="folder-card"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Folder 1"><p>Folder 1</p></div>
+        <div class="folder-card"><img src="https://img.youtube.com/vi/3JZ_D3ELwOQ/0.jpg" alt="Folder 2"><p>Folder 2</p></div>
+        <div class="folder-card"><img src="https://img.youtube.com/vi/aqz-KE-bpKQ/0.jpg" alt="Folder 3"><p>Folder 3</p></div>
+        <div class="folder-card"><img src="https://img.youtube.com/vi/tgbNymZ7vqY/0.jpg" alt="Folder 4"><p>Folder 4</p></div>
+        <div class="folder-card"><img src="https://img.youtube.com/vi/V-_O7nl0Ii0/0.jpg" alt="Folder 5"><p>Folder 5</p></div>
       </div>
     </section>
 
-    <!-- Paid categories rows -->
+    <!-- Featured Public Playlists -->
     <section class="row">
       <h2>Featured Public Playlists</h2>
-      <div class="folder-row">
-        <div class="folder-card"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><p>Playlist 1</p></div>
-        <div class="folder-card"><img src="https://img.youtube.com/vi/3JZ_D3ELwOQ/0.jpg"><p>Playlist 2</p></div>
-        <div class="folder-card"><img src="https://img.youtube.com/vi/aqz-KE-bpKQ/0.jpg"><p>Playlist 3</p></div>
-        <div class="folder-card"><img src="https://via.placeholder.com/250x150?text=Playlist+4"><p>Playlist 4</p></div>
-        <div class="folder-card"><img src="https://via.placeholder.com/250x150?text=Playlist+5"><p>Playlist 5</p></div>
+      <div class="folder-grid">
+        <div class="folder-card"><img src="https://img.youtube.com/vi/2Vv-BfVoq4g/0.jpg" alt="Playlist 1"><p>Playlist 1</p></div>
+        <div class="folder-card"><img src="https://img.youtube.com/vi/ktvTqknDobU/0.jpg" alt="Playlist 2"><p>Playlist 2</p></div>
+        <div class="folder-card"><img src="https://img.youtube.com/vi/CevxZvSJLk8/0.jpg" alt="Playlist 3"><p>Playlist 3</p></div>
+        <div class="folder-card"><img src="https://img.youtube.com/vi/3tmd-ClpJxA/0.jpg" alt="Playlist 4"><p>Playlist 4</p></div>
       </div>
     </section>
 
+    <!-- Movies row -->
     <section class="row">
-      <h2>Fashion & Marketplace</h2>
-      <div class="folder-row">
-        <div class="folder-card"><img src="https://via.placeholder.com/250x150?text=Fashion+1"><p>Fashion 1</p></div>
-        <div class="folder-card"><img src="https://via.placeholder.com/250x150?text=Fashion+2"><p>Fashion 2</p></div>
-        <div class="folder-card"><img src="https://via.placeholder.com/250x150?text=Marketplace+1"><p>Marketplace 1</p></div>
-        <div class="folder-card"><img src="https://via.placeholder.com/250x150?text=Marketplace+2"><p>Marketplace 2</p></div>
+      <h2>Movies</h2>
+      <div class="folder-grid">
+        <div class="folder-card"><img src="https://img.youtube.com/vi/aqz-KE-bpKQ/0.jpg" alt="Movie 1"><p>Movie 1</p></div>
+        <div class="folder-card"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Movie 2"><p>Movie 2</p></div>
+        <div class="folder-card"><img src="https://img.youtube.com/vi/3JZ_D3ELwOQ/0.jpg" alt="Movie 3"><p>Movie 3</p></div>
       </div>
     </section>
 
+    <!-- Fashion row -->
     <section class="row">
-      <h2>Communities & Courses</h2>
-      <div class="folder-row">
-        <div class="folder-card"><img src="https://via.placeholder.com/250x150?text=Community+1"><p>Community 1</p></div>
-        <div class="folder-card"><img src="https://via.placeholder.com/250x150?text=Course+1"><p>Course 1</p></div>
-        <div class="folder-card"><img src="https://via.placeholder.com/250x150?text=Community+2"><p>Community 2</p></div>
-        <div class="folder-card"><img src="https://via.placeholder.com/250x150?text=Course+2"><p>Course 2</p></div>
+      <h2>Fashion</h2>
+      <div class="folder-grid">
+        <div class="folder-card"><img src="https://via.placeholder.com/250x150.png?text=Fashion+1" alt="Fashion 1"><p>Fashion 1</p></div>
+        <div class="folder-card"><img src="https://via.placeholder.com/250x150.png?text=Fashion+2" alt="Fashion 2"><p>Fashion 2</p></div>
+        <div class="folder-card"><img src="https://via.placeholder.com/250x150.png?text=Fashion+3" alt="Fashion 3"><p>Fashion 3</p></div>
+      </div>
+    </section>
+
+    <!-- Marketplace row -->
+    <section class="row">
+      <h2>Marketplace</h2>
+      <div class="folder-grid">
+        <div class="folder-card"><img src="https://via.placeholder.com/250x150.png?text=Digital+Product+1" alt="Product 1"><p>Product 1</p></div>
+        <div class="folder-card"><img src="https://via.placeholder.com/250x150.png?text=Digital+Product+2" alt="Product 2"><p>Product 2</p></div>
+        <div class="folder-card"><img src="https://via.placeholder.com/250x150.png?text=Digital+Product+3" alt="Product 3"><p>Product 3</p></div>
+      </div>
+    </section>
+
+    <!-- Communities row -->
+    <section class="row">
+      <h2>Communities</h2>
+      <div class="folder-grid">
+        <div class="folder-card"><img src="https://via.placeholder.com/250x150.png?text=Community+1" alt="Community 1"><p>Community 1</p></div>
+        <div class="folder-card"><img src="https://via.placeholder.com/250x150.png?text=Community+2" alt="Community 2"><p>Community 2</p></div>
+        <div class="folder-card"><img src="https://via.placeholder.com/250x150.png?text=Community+3" alt="Community 3"><p>Community 3</p></div>
+      </div>
+    </section>
+
+    <!-- Courses row -->
+    <section class="row">
+      <h2>Courses</h2>
+      <div class="folder-grid">
+        <div class="folder-card"><img src="https://via.placeholder.com/250x150.png?text=Course+1" alt="Course 1"><p>Course 1</p></div>
+        <div class="folder-card"><img src="https://via.placeholder.com/250x150.png?text=Course+2" alt="Course 2"><p>Course 2</p></div>
+        <div class="folder-card"><img src="https://via.placeholder.com/250x150.png?text=Course+3" alt="Course 3"><p>Course 3</p></div>
       </div>
     </section>
   </main>
 
-  <!-- Chatbot icon -->
-  <div class="chatbot">💬</div>
+  <!-- Chat Icon -->
+  <div class="chat-icon">💬</div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
